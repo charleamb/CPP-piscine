@@ -6,13 +6,12 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 19:10:27 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/24 19:44:44 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/25 09:54:15 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 #include "HumanB.hpp"
-#include "Weapon.hpp"
 
 int	main()
 {
