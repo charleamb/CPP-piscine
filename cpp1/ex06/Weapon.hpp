@@ -6,12 +6,12 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 11:22:15 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/25 10:11:31 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/26 16:21:37 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMAN_HPP
-# define HUMAN_HPP
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
 
 #include <iostream>
 #include <string>

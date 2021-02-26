@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/20 12:39:39 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/26 09:15:58 by chgilber         ###   ########.fr       */
+/*   Created: 2021/02/26 16:20:41 by chgilber          #+#    #+#             */
+/*   Updated: 2021/02/26 16:22:29 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Weapon.hpp"
-#include	<cstring>
+#ifndef FIXED_HPP
+# define FIXED_HPP
 
-Weapon::Weapon(std::string	type)
-{
-	_type =/*	"        " + */type;
-}
+#include <iostream>
+#include <string>
 
-void	Weapon::setType(std::string	type)
-{
-	_type =/*	"       " + */type;
-}
+class	Fixed {
 
-std::string	Weapon::getType()
-{
-	return _type;
-}
+	private:
 
-Weapon::~Weapon()
-{
-	std::cout << "broken" << std::endl;
-}
+		std::string	_type;
+
+	public:
+
+		Fixed(std::string	type);
+		void	setType(std::string	type);
+		std::string		getType();
+						~Fixed();
+};
+
+#endif
