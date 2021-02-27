@@ -6,13 +6,13 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 12:39:39 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/25 18:11:43 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/27 18:03:26 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"HumanA.hpp"
 
-HumanA::HumanA(std::string	name, Weapon type)
+HumanA::HumanA(std::string	name, Weapon &type)
 {
 	_name = name;
 	_weapon = &type;//new Weapon("Clubire");

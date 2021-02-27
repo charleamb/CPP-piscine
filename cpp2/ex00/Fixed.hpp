@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/26 16:20:41 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/26 16:22:29 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/27 15:50:55 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,15 @@ class	Fixed {
 
 	private:
 
-		std::string	_type;
+		int		fixep;
+		const static	int	bit = 8;
 
 	public:
 
-		Fixed(std::string	type);
-		void	setType(std::string	type);
-		std::string		getType();
-						~Fixed();
+		Fixed();
+		int		getRawBits(void) const;
+		void	setRawBits(int const raw);
+				~Fixed();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 12:39:39 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/25 10:23:18 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/27 18:02:41 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ HumanB::HumanB(std::string	name)
 	_name = name;
 }
 
-void	HumanB::setWeapon(Weapon club)
+void	HumanB::setWeapon(Weapon &club)
 {
 	_weapon = &club;//new Weapon("Clubire");
 }

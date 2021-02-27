@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 11:22:15 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/25 10:23:24 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/02/27 18:00:58 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class	HumanB {
 
 		HumanB(std::string	name);
 		std::string		Getname();
-		void	setWeapon(Weapon club);
+		void	setWeapon(Weapon &club);
 		void	attack();
 						~HumanB();
 };
