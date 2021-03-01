@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 18:04:22 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/19 16:45:25 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/03/01 15:59:11 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void	Pony::initheap()
 		std::cout << jumper->_poids;
 		std::cout << "First heap" << std::endl;
 	}
+	delete	jumper;
 	jumper->ponyOnTheHeap();
 }
 

@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 10:47:20 by chgilber          #+#    #+#             */
-/*   Updated: 2021/02/27 19:15:44 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/03/01 15:59:28 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ int i)
 	{
 		std::cout << find[j] << line[i + j] << " in" << std::endl;
 	}
-	std::cout << j << find.size() << "check" << std::endl;
 	if (j == (int)find.size())
 		return replacef(line, replace, i, j);
 	return line;
