@@ -1,0 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/02 17:36:00 by chgilber          #+#    #+#             */
+/*   Updated: 2021/03/08 19:14:35 by chgilber         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
+//#include "NinjaTrap.hpp"
+#include "SuperTrap.hpp"
+
+int	main(void)
+{
+	srand(time(NULL));
+//	FragTrap		a("Blizt");
+//	ScavTrap		b("Weirdy");
+//	NinjaTrap		c("Azuma");
+//	NinjaTrap		d("Tanjiro");
+	SuperTrap		child("Billy");
+
+//	b.MeleeAttack("Tom");
+//	b.RangedAttack("Mugiwara");
+//	b.BeRepaired(15);
+//	b.challengeNewcomer("Corrector");
+//	b.MeleeAttack("Jojo");
+//	c.NinjaShoebox(a);
+//	d.NinjaShoebox(b);
+//	c.NinjaShoebox(d);
+	std::cout << "-----------papa: " << a.getname() << std::endl;
+	a.statglobal();
+	std::cout << "-----------mama: " << d.getname() << std::endl;
+	d.statglobal();
+	std::cout << "-----------child: " << child.getname() << std::endl;
+	child.statglobal();
+	child.NinjaShoebox(a);
+	child.vaulthunter_dot_exe("dami");
+	return	0;
+}

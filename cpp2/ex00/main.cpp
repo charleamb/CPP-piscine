@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/26 16:20:41 by chgilber          #+#    #+#             */
-/*   Updated: 2021/03/02 18:15:21 by chgilber         ###   ########.fr       */
+/*   Created: 2021/03/02 17:36:00 by chgilber          #+#    #+#             */
+/*   Updated: 2021/03/02 17:58:04 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
-# define FIXED_HPP
-
 #include <iostream>
-#include <string>
+#include "Fixed.hpp"
 
-class	Fixed {
-
-	private:
-
-		int					_fixep;
-		const static int	_bit = 8;
-
-	public:
-
-				Fixed();
-				Fixed(const Fixed	&f);
-		Fixed	&operator=(const Fixed &f);
-		int		getRawBits(void) const;
-		void	setRawBits(int const raw);
-				~Fixed();
-};
-
-#endif
+int	main(void)
+{
+	Fixed	a;
+	Fixed	b(a);
+	Fixed	c;
+	
+	c = b;
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
+	return 0;
+}
