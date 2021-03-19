@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/11 18:29:08 by chgilber          #+#    #+#             */
-/*   Updated: 2021/03/18 10:37:15 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/03/19 10:03:47 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 		AMateria::AMateria() : _xp(0), _type("unnamed")
 {
 }
-		AMateria::AMateria(std::string const type) : _xp(0), _type(type)
+		AMateria::AMateria(std::string const &type) : _xp(0), _type(type)
 {
 }
 		AMateria::AMateria(const AMateria &a)
@@ -28,7 +28,7 @@ AMateria	&AMateria::operator=(const AMateria &to_copy)
 	return *this;
 }
 
-std::string const	AMateria::getType() const
+std::string const	&AMateria::getType() const
 {
 	return _type;
 }
@@ -36,6 +36,11 @@ std::string const	AMateria::getType() const
 unsigned int		AMateria::getXP() const
 {
 	return _xp;
+}
+
+void				AMateria::setXP(int xp)
+{
+	_xp = xp;
 }
 
 void				AMateria::use(ICharacter &target)
@@ -46,5 +51,5 @@ void				AMateria::use(ICharacter &target)
 
 			AMateria::~AMateria()
 {
-	std::cout << "break :" << _type << ", xp : "<< _xp << std::endl;
+//	std::cout << "break :" << _type << ", xp : "<< _xp << std::endl;
 }
