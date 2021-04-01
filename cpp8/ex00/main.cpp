@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/30 11:12:48 by chgilber          #+#    #+#             */
-/*   Updated: 2021/04/01 13:36:34 by chgilber         ###   ########.fr       */
+/*   Created: 2021/04/01 11:41:24 by chgilber          #+#    #+#             */
+/*   Updated: 2021/04/01 11:44:01 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP
-# define WHATEVER_HPP
+#include "easyfind.hpp"
 
-#include	<iostream>
-#include	<cstdlib>
-#include	<cstring>
-#include	<cstdio>
-#include	<cctype>
-#include	<string>
+int	main(void)
+{
+	std::vector<int>	myv;
 
-	template <typename T>
-void	swap(T &A, T &B)
-{
-	T	tmp = B;
-
-	B = A;
-	A = tmp;
+	for(int i = 0; i < 5; i++)
+		myv.push_back(i*i);
+	easyfind(myv, 9);
+	return 0;
 }
-	template <typename T>
-T const		&min(T &A,T &B)
-{
-	return A < B ? A : B;
-}
-	template <typename T>
-T const		&max(T &A, T &B)
-{
-	return A > B ? A : B;
-}
-#endif

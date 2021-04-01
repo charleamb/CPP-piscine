@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   easyfind.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/30 11:12:48 by chgilber          #+#    #+#             */
-/*   Updated: 2021/04/01 13:36:34 by chgilber         ###   ########.fr       */
+/*   Created: 2021/04/01 11:20:49 by chgilber          #+#    #+#             */
+/*   Updated: 2021/04/01 11:40:26 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP
-# define WHATEVER_HPP
+#ifndef	EASYFIND_HPP
+# define EASYFIND_HPP
 
-#include	<iostream>
-#include	<cstdlib>
-#include	<cstring>
-#include	<cstdio>
-#include	<cctype>
-#include	<string>
+#include <iostream>
+#include <vector>
 
-	template <typename T>
-void	swap(T &A, T &B)
+template <typename T>
+bool	easyfind(T &v, int i)
 {
-	T	tmp = B;
+	for (v::iterator it = v.begin(); it != v.end(); it++)
+	{
+			if (i == *it)
+			{
+				std::cout <<"ici "<< *it << std::endl;
+				return true;
+			}
+			std::cout << *it << std::endl;
+	}
+	return false;
+}
 
-	B = A;
-	A = tmp;
-}
-	template <typename T>
-T const		&min(T &A,T &B)
-{
-	return A < B ? A : B;
-}
-	template <typename T>
-T const		&max(T &A, T &B)
-{
-	return A > B ? A : B;
-}
 #endif

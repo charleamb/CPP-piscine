@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/30 11:12:48 by chgilber          #+#    #+#             */
-/*   Updated: 2021/04/01 13:36:34 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/04/01 12:24:09 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP
-# define WHATEVER_HPP
+#ifndef ITER_HPP
+# define ITER_HPP
 
 #include	<iostream>
 #include	<cstdlib>
@@ -21,21 +21,15 @@
 #include	<string>
 
 	template <typename T>
-void	swap(T &A, T &B)
+void	iter(T *array, int len, void (*f)(T &))
 {
-	T	tmp = B;
+	for (int i = 0; i < len; i++)
+		f(array[i]);
+}
+	template <typename T>
+void	printer(T	&c)
+{
+	std::cout << c << std::endl;
+}
 
-	B = A;
-	A = tmp;
-}
-	template <typename T>
-T const		&min(T &A,T &B)
-{
-	return A < B ? A : B;
-}
-	template <typename T>
-T const		&max(T &A, T &B)
-{
-	return A > B ? A : B;
-}
 #endif
