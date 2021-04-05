@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 22:34:28 by chgilber          #+#    #+#             */
-/*   Updated: 2021/04/01 13:32:25 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/04/02 11:35:44 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	main(void)
 	}
 	catch(std::exception &e)
 	{
-		std::cerr << e.what() << std ::endl;
+		std::cerr << e.what() << std::endl;
 	}
 	return 0;
 }
