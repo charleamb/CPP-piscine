@@ -6,7 +6,7 @@
 /*   By: chgilber <charleambg@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/30 11:12:48 by chgilber          #+#    #+#             */
-/*   Updated: 2021/04/01 13:36:34 by chgilber         ###   ########.fr       */
+/*   Updated: 2021/04/09 09:01:54 by chgilber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ void	swap(T &A, T &B)
 	A = tmp;
 }
 	template <typename T>
-T const		&min(T &A,T &B)
+T	&min(T &A,T &B)
 {
 	return A < B ? A : B;
 }
 	template <typename T>
-T const		&max(T &A, T &B)
+T	&max(T &A, T &B)
 {
 	return A > B ? A : B;
 }
